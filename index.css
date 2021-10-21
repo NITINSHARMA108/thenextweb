@@ -1,0 +1,567 @@
+body{
+    margin:0;
+    overflow-x:hidden;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#f5f5f5;
+}
+
+
+/* header navigation designing */
+header{
+    background-color:#f5f5f5;
+    
+    
+    width:100%;
+    height:50px;
+}
+header nav ul{
+    display:flex;
+    list-style-type:none;
+    text-transform:uppercase;
+    
+}
+header nav *{
+    margin:5px 10px;
+    
+}
+#menu-bar{
+    display:none;
+}
+
+header nav {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    height:100%;
+}
+
+/* jumping to main content */
+main{
+    /*position: relative;*/
+    width:100%;
+    
+}
+
+/*section 1 */
+.first{
+    display:flex;
+    height:200px;
+}
+.first div{
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+/* second section */
+
+.second{
+    width:100%;
+    height:500px;
+    padding:0 5%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns: 39% 39%;
+    grid-gap:2%;
+    color:white;
+}
+.second > .second-two{
+    display:grid;
+    grid-template-rows: 48% 48%;
+    grid-gap:4%;
+    
+}
+
+.second .second-one{
+    background-image: url("https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fhandson.jpeg&signature=d2797bf901a2d508b27c8cb41f22c605");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.second-two-one{
+    background-image: url('https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fapple-all.jpeg&signature=f16b3a42701567704ba13b83ccbd24d3');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second-two-two{
+    background-image: url('https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Frobotaxis.jpeg&signature=3833c44671c92942d59602ec1d8034bd');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second h1{
+    position:relative;
+    bottom:0;
+    left:0;
+}
+
+
+/*.second-one{
+    height:100%;
+}
+.second-two{
+    display:grid;
+    height:100%;
+    grid-template-rows:48% 48%;
+    grid-gap:4%;
+}
+.second-two > div{
+    height:100%;
+    width:100%;
+}
+.second img{
+    height: 70%;width:100%;
+}
+.second h1{
+    margin-top:auto;
+}*/
+
+
+
+/* third section */
+.third{
+    background-color:#f5f5f5;
+    padding-top:20px;
+}
+.third > div{
+    width:100%;
+    padding:2%;
+    display:flex;
+    justify-content:space-around;
+}
+.third > div > div{
+    display:grid;
+    grid-template-columns: 10% 90%;
+}
+.third a{
+    color:black;
+    text-decoration: none;
+}
+.third a:hover{
+    text-decoration: underline;
+}
+.index{
+    color:purple;
+    font-size:1em;
+    font-weight:bolder;
+}
+
+/* styling fourth section */
+.fourth{
+    width:90%;
+    margin:auto;
+}
+.fourth div{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    
+
+}
+.fourth div article{
+    width:20%;
+    margin-right:5%
+}
+.fourth button{
+    
+    padding:10px 20px;
+    border-radius:20px;
+    background-color:white;
+    color: #a5a5a5;
+    border:2px solid #a5a5a5;
+}
+.fourth img{
+    width:100%;
+}
+.fourth a{
+    text-decoration: none;
+    color:black;
+}
+.fourth a:hover{
+    text-decoration:underline;
+}
+.fourth p{
+    color:#aaaaaa;
+}
+
+/* fifth section */
+.fifth{
+    width:90%;
+    margin:auto;
+   
+}
+.fifth > div {
+    width:100%;
+    display:flex;
+    flex-wrap:nowrap;   
+    overflow-x:auto;
+    
+}
+.fifth > div > article{
+    flex-basis:auto;
+    min-width:200px;
+    aspect-ratio:1/1;
+    
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    margin-left:10px;
+    background-image: url("https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-neural.jpg&signature=7b20700b0f58af3860449664ae1a5e68");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+}
+::-webkit-scrollbar{
+    width:0;
+}
+
+/* sixth section */
+
+.sixth{
+    padding:40px 0;
+    width: 100%;
+    background-color: black;
+    background-image: url("https://next.tnwcdn.com/assets/next/img/spacesbg.png");
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+    color: white;
+    margin:40px 0;
+}
+.form >p{
+    background-color:white;
+   padding:0px 10px;
+    width:10%;
+    border-right:0px solid white;
+    
+}
+.form{
+    display:flex;
+    align-items:center;
+    width:50%;
+    margin:auto;
+}
+.form p i{
+    color:#555;
+}
+.form > * {
+    height:40px;
+
+}
+.form button{
+    padding:10px;
+    border:0px solid white;
+    background-color:white;
+    width:30%;
+    text-align: center;
+}
+ .form input{
+    border:0px solid white;
+    padding:0px;
+    width:60%;
+}
+
+
+
+/* seventh section */
+::-webkit-scrollbar{
+    scrollbar-width: 0;
+}
+.seventh{
+    width:90%;
+    margin:auto;
+    
+    
+    
+}
+.seventh > div > *{
+    margin:0;
+}
+.seventh > div {
+    background-color: black;
+    color: white;
+    display:grid;
+    width:100%;
+    grid-template-columns:80% 20%;
+    height:650px;
+}
+.seventh img{
+    width:100%;
+}
+.recommendations{
+    height:100%;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+.seventh a{
+    color:white;
+}
+
+
+/* eighth */
+
+.eighth{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin:auto;
+}
+.eighth > div{
+    display:flex;
+}
+.eighth > div> article{
+    width:50%;
+}
+.companies{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.companies > img{
+    width:12%;
+    
+}
+.eighth button{
+    background-color:green;
+    
+    color:white;
+    border:1px solid white;
+    border-radius:10px;
+    
+    padding:20px;
+}
+
+.logo-word{
+    display:flex;
+    flex-wrap:wrap;
+   
+}
+.logo-word > div{
+    width:50%;
+    display:flex;
+    align-items:center;
+    font-style: normal;
+    font-size:20px;
+}
+.logo-word > div > img{
+    width:100px;
+    aspect-ratio:1;
+}
+
+
+/* footer */
+footer{
+    background-color:black;
+    width:100%;
+    padding:5% 5%;
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+
+footer .footer-one{
+    display:flex;
+
+}
+.footer-one article{
+    width:50%;
+    display:flex;
+}
+.footer-one article > div{
+    
+    width:50%;
+}
+.footer-one article > div > ul{
+    list-style-type: none;
+    text-transform:capitalize;
+    color: rgba(0,204,204);
+    padding-left:0px;
+    font-size:1.2em;
+}
+
+.footer-two{
+    text-align:center;
+}
+
+
+.social-media{
+    font-size:1.5em;
+}
+.social-media i{
+    margin-left:10px;
+    margin-top:10px;
+}
+
+/*  section wise margin */
+section {
+    margin-top:40px;
+}
+
+
+
+/* writing down the responsive version */
+
+@media screen and (max-width:768px){
+    header #menu-bar{
+        display:inline;
+    }
+    header .fa-envelope{
+        display:none;
+    }
+    header ul{
+        display:none !important;
+    }
+
+
+
+    
+    .first{
+       
+        flex-direction:column;
+        justify-content:center;
+    }
+    .first > div{
+        width:100%;
+        height:auto;
+        border:none;
+    }
+
+    /* second responsive design way */
+    .second{
+        overflow-x:scroll;
+        height:400px;
+       
+        
+    }
+    .second div {
+        display:flex;
+        flex-wrap:nowrap;
+        width:100%;
+    }
+
+    .second img{
+        min-width:400px;
+        margin-right:20px;
+        flex-basis:auto;
+    }
+    .ad{
+        display:block;
+    }
+    
+    /* third mobile first */
+    .third{
+        width:90%;
+        margin:auto;
+    }
+    .third > div{
+        flex-direction: column;
+    }
+    .third > div > div{
+        display:grid;
+        grid-template-columns: 10% 90%;
+    }
+    
+
+
+    /* fourth module first*/
+    .fourth > div{
+        flex-direction: column;
+    }
+    .fourth > div > article{
+        width:100%;
+        margin-right:0px;
+        display:grid;
+        grid-template-columns: 30% 70%;
+        margin-bottom:20px;
+    }
+    
+    .fourth img{
+        border-radius:50%;
+        width:80%;
+        aspect-ratio: 1/1;
+        
+    }
+    .fourth button{
+        width:100%;
+    }
+
+    /*sixth */
+    .form{
+        width:80%;
+    }
+
+    /* seventh responsive version */
+    .seventh > div {
+        display:flex;
+        flex-direction:column;
+        height:auto;
+      
+    }
+    .seventh .recommendations{
+        
+        display:flex;
+        overflow-x:auto;
+        background-color:#f5f5f5;
+        
+    }
+    .seventh .recommendations > article{
+        min-width:300px;
+        margin-right:10px;
+        flex-basis:auto;
+    }
+    .recommendations a{
+        color:black;
+    }
+    ::-webkit-scrollbar{
+        width:auto;
+    }
+    
+    
+    
+    
+    /*  eighth responsive version */
+    #eight{
+        flex-direction:column;
+    }
+    #eight > article {
+        width:100%;
+    }
+    .companies{
+        flex-wrap: wrap;
+        width:90%;
+        
+    }
+    .companies > img{
+        padding:0;
+        width:45%;
+        
+    }
+
+    .logo-word div{
+        flex-direction:column;
+    }
+
+    /* footer */
+    footer .footer-one{
+        flex-direction:column;
+    }
+    .company-info{
+        width:100%;
+    }
+    .footer-one article{
+        width:100%;
+    }
+}
+
+select{
+    border:none;
+    background-color:#f5f5f5;
+    text-transform:uppercase;
+}
