@@ -13,6 +13,15 @@ header{
     
     width:100%;
     height:50px;
+    margin-bottom:0;
+}
+header nav {
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+   
 }
 header nav ul{
     display:flex;
@@ -28,13 +37,8 @@ header nav *{
     display:none;
 }
 
-header nav {
-    display:flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    height:100%;
-}
+
+
 
 /* jumping to main content */
 main{
@@ -47,6 +51,7 @@ main{
 .first{
     display:flex;
     height:200px;
+    margin-top:0px;
 }
 .first div{
     width:50%;
@@ -63,9 +68,9 @@ main{
     width:100%;
     height:500px;
     padding:0 5%;
-    margin:40px auto;
+   /* margin:40px auto;*/
     display:grid;
-    grid-template-columns: 39% 39%;
+    grid-template-columns: 44% 44%;
     grid-gap:2%;
     color:white;
 }
@@ -75,28 +80,36 @@ main{
     grid-gap:4%;
     
 }
+.second h1{
+    font-size:2em;
+}
 
 .second .second-one{
     background-image: url("https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fhandson.jpeg&signature=d2797bf901a2d508b27c8cb41f22c605");
     background-repeat: no-repeat;
     background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
 
 }
 .second-two-one{
-    background-image: url('https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fapple-all.jpeg&signature=f16b3a42701567704ba13b83ccbd24d3');
+    background-image: url('https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Faliens.jpeg&signature=cf32dfaea94174a3c810b1aa245f6baf');
     background-repeat: no-repeat;
     background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
 }
 .second-two-two{
     background-image: url('https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Frobotaxis.jpeg&signature=3833c44671c92942d59602ec1d8034bd');
     background-repeat: no-repeat;
     background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
 }
-.second h1{
-    position:relative;
-    bottom:0;
-    left:0;
-}
+
 
 
 /*.second-one{
@@ -282,6 +295,9 @@ main{
     
     
 }
+.seventh iframe{
+    height:500px;
+}
 .seventh > div > *{
     margin:0;
 }
@@ -312,7 +328,7 @@ main{
     display: flex;
     flex-direction: column;
     width:90%;
-    margin:auto;
+    margin:40px auto 40px auto;
 }
 .eighth > div{
     display:flex;
@@ -421,7 +437,7 @@ section {
 
 
 
-    
+    /* first section responsive design way */
     .first{
        
         flex-direction:column;
@@ -435,25 +451,30 @@ section {
 
     /* second responsive design way */
     .second{
-        overflow-x:scroll;
-        height:400px;
-       
-        
-    }
-    .second div {
+        width:90%;
+        margin:auto;
         display:flex;
-        flex-wrap:nowrap;
+        flex-wrap: nowrap;
+        overflow-x:scroll;
+        height:300px;
+        font-size:0.8em;
+    }
+    .second-one{
         width:100%;
     }
-
-    .second img{
-        min-width:400px;
-        margin-right:20px;
+    .second .second-two{
+        display:flex;
+        flex-direction: row;
+        width:100%;
+    }
+    .second-two > div{
+        width:100%;
+    }
+    .second div{
+        min-width:90%;
         flex-basis:auto;
     }
-    .ad{
-        display:block;
-    }
+  
     
     /* third mobile first */
     .third{
@@ -504,6 +525,9 @@ section {
         height:auto;
       
     }
+    .seventh iframe{
+        height:400px;
+    }
     .seventh .recommendations{
         
         display:flex;
@@ -529,19 +553,22 @@ section {
     /*  eighth responsive version */
     #eight{
         flex-direction:column;
+        align-items:center;
+        text-align:center;
     }
     #eight > article {
         width:100%;
     }
     .companies{
         flex-wrap: wrap;
+        justify-content:center;
         width:90%;
+        margin:auto;
         
     }
     .companies > img{
         padding:0;
         width:45%;
-        
     }
 
     .logo-word div{
@@ -564,4 +591,24 @@ select{
     border:none;
     background-color:#f5f5f5;
     text-transform:uppercase;
+}
+
+@media screen and (max-width:350px){
+    .second h1{
+        font-size:1em;
+    }
+    .second {
+        height:250px;
+    }
+    .seventh iframe{
+        height:300px;
+    }
+    .seventh .recommendations > article{
+        min-width:80%;
+        flex-basis:auto;
+    }
+    .sixth > .form > button{
+        font-size:0.5em;
+    }
+    
 }
